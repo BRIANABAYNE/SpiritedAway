@@ -9,7 +9,7 @@ import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
 
-    var viewModel: CharacterSingleViewModel?
+    var viewModel: SingleCharacterViewModel?
     
     // MARK: - Outlets
 

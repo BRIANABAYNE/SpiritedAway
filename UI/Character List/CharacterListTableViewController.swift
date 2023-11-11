@@ -20,7 +20,6 @@ class CharacterListTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
         return viewModel.characterList.count
@@ -30,7 +29,7 @@ class CharacterListTableViewController: UITableViewController {
      
         let selectedCharacter = viewModel.characterList[indexPath.row]
      
-        cell.viewModel = CharacterSingleViewModel(injectedDelegate: cell, characterData: selectedCharacter)
+        cell.viewModel = SingleCharacterViewModel(injectedDelegate: cell, characterData: selectedCharacter)
         return cell
     }
 
@@ -38,7 +37,7 @@ class CharacterListTableViewController: UITableViewController {
         guard segue.identifier == "toDetailVC" else { return }
                guard let indexPath = tableView.indexPathForSelectedRow,
               let cell = tableView.cellForRow(at: indexPath) as? CharacterTableViewCell,
-              let destination = segue.destination as? CharacterSingleDetailViewController,
+              let destination = segue.destination as? SingleCharacterDetailViewController,
                      let imageToSend = cell.characterImageView.image,
                      let characterToSend = cell.viewModel?.fetchedCharacter else { return }
         destination.configure(with: characterToSend, image: imageToSend)

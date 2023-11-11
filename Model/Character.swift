@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct CharacterTopLevelDictionary: Decodable {
     
     let data: CharacterData
@@ -24,7 +23,6 @@ struct Attributes: Decodable {
         case imageDictionary = "image"
         case characterID = "malId"
         case description
-        
     }
     
     let canonicalName: String

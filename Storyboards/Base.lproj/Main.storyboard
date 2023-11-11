@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="1089.3129770992366" y="-157.04225352112678"/>
         </scene>
-        <!--Character Single Detail View Controller-->
+        <!--Single Character Detail View Controller-->
         <scene sceneID="9h5-xy-WAz">
             <objects>
-                <viewController id="kFy-SX-Z1H" customClass="CharacterSingleDetailViewController" customModule="AnimeMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kFy-SX-Z1H" customClass="SingleCharacterDetailViewController" customModule="AnimeMVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qdi-jC-j90">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

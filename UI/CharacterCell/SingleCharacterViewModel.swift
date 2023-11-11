@@ -7,15 +7,10 @@
 
 import Foundation
 
-
-
 protocol CharacterSingleViewModelDelegate: CharacterTableViewCell {
-    func configCell(with character: Attributes) // We are creating this function that will config the cell to gain access from the
-    
+    func configCell(with character: Attributes)
 }
-
-
-class CharacterSingleViewModel {
+class SingleCharacterViewModel {
     
 // MARK: - Properties
     
@@ -25,21 +20,20 @@ class CharacterSingleViewModel {
    
     var characterData: CharacterDataDictionary
     var fetchedCharacter: CharacterData?
-    var service: CharacterSingleServiceable
+    var service: SingleCharacterServiceable
     
     
     // MARK: - Dependency Injection
-    init(injectedDelegate: CharacterSingleViewModelDelegate, characterData: CharacterDataDictionary, injectedCharacterSingleService: CharacterSingleServiceable = CharacterSingleService()) {
+    init(injectedDelegate: CharacterSingleViewModelDelegate, characterData: CharacterDataDictionary, injectedCharacterSingleService: SingleCharacterServiceable = SingleCharacterService()) {
         self.delegate = injectedDelegate
         self.characterData = characterData
         self.service = injectedCharacterSingleService
-        
+
         fetchSingleCharacter()
     }
    
     func fetchSingleCharacter() {
         
-   
         let singleCharacterURLString = characterData.relationships.character.links.related
         
         service.fetchSingleCharacter(with: singleCharacterURLString ) { result in
