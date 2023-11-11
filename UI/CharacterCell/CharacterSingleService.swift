@@ -6,9 +6,7 @@
 //
 
 import Foundation
-// https://kitsu.io/api/edge/media-characters/105018/character
 
-// Using abstraction to gain a non concrete + concrete object to stick to SOLID. We are using Model View, View Model design pattern.
 
 protocol CharacterSingleServiceable {
     func fetchSingleCharacter(with url: String, callback: @escaping (Result<CharacterTopLevelDictionary, NetworkingError>) -> Void)
@@ -17,7 +15,7 @@ protocol CharacterSingleServiceable {
 
 struct CharacterSingleService: APIDataProvidable, CharacterSingleServiceable {
     
-    // Creating the seoncd fetch function here. We are asking the fetch to use the URL string to come complete with results of success or failure. The success will be a character top level dict or a custom error.
+  
     
     func fetchSingleCharacter(with url: String, callback: @escaping (Result<CharacterTopLevelDictionary, NetworkingError>) -> Void) {
         

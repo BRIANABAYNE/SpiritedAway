@@ -7,17 +7,6 @@
 
 import Foundation
 
-/// An abstraction of the `URLSession.shared.DataTask` closure.
-/// ```
-/// func perform(_ request: URLRequest, completion: @escaping (Result<Data, NetworkingError>) -> Void)
-/// ```
-///
-/// - Parameters
-///   - request: A URL request object that provides the URL, cache policy, request type, body data or body stream, and so on.
-///   - completion: The completion handler to call when the `dataTask` request is complete. This completion handler takes the following  `ResultType` parameters:
-///     - Data: The data returned by the server.
-///     - NetworkingError: A custom error type
-///
 protocol APIDataProvidable {
     func perform(_ request: URLRequest, completion: @escaping (Result<Data, NetworkingError>) -> Void)
 }

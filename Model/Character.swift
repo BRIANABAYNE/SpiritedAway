@@ -8,8 +8,6 @@
 import Foundation
 
 
-// This struct is our second model that is getting us one character. We have to use coding keys on attributes becasue we changed the keys from the JSON. You can change any key but you have to make sure the information is available becasue it will not decode if not. Always double check for spelling and copy and paste when possible. 
-
 struct CharacterTopLevelDictionary: Decodable {
     
     let data: CharacterData

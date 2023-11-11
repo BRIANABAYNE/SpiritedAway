@@ -6,17 +6,7 @@
 //
 
 import Foundation
-// File for custom errors 
-/// A custom Error type used to craft custom error messages
-/// ```
-/// enum NetworkingError: LocalizedError
-/// ```
-///
-///  - invalidURL: "Invalid URL. Check your endpoint."
-///  - thrownError: Used when we can capture an error. "Thrown error. Error was \(error.localizedDescription)"
-///  - noData: Used when unable to unwrap a `Data?`. "No data received from successful network fetch."
-///  - unableToDecode: Used when we are unable to `.decode()` our Data Type
-///  - invalidStatusCode: Used when the `URLResponse` is a code that does not match `200`
+
 enum NetworkingError: LocalizedError {
 
     case invalidURL

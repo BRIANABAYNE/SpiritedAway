@@ -8,7 +8,6 @@
 import UIKit
 
 
-// We are using this to gain access to our UIIMAGE 
 
 class ServiceRequestingImageView: UIImageView, APIDataProvidable {
 
