@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "63D477A1-BD7A-45A4-8255-383FAE462B95"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8ED5C1F2-A347-4630-B99E-54B1CA3CD533"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnimeMVVM/UI/CharacterCell/CharacterTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchImage(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8ED5C1F2-A347-4630-B99E-54B1CA3CD533 - df9157979edb4c96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimeMVVM.CharacterTableViewCell.fetchImage(with: Swift.String) -&gt; ()"
+                  moduleName = "AnimeMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianabayne/Downloads/AnimeMVVM-5-2/AnimeMVVM/UI/CharacterCell/CharacterTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "8ED5C1F2-A347-4630-B99E-54B1CA3CD533 - df9157979edb4c96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimeMVVM.CharacterTableViewCell.fetchImage(with: Swift.String) -&gt; ()"
+                  moduleName = "AnimeMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianabayne/Downloads/AnimeMVVM-5-2/AnimeMVVM/UI/CharacterCell/CharacterTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "524">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0302B902-7F8D-4203-ADA0-63671BD70E83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnimeMVVM/UI/CharacterCell/ServiceRequestingImageVIew.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchImage(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
